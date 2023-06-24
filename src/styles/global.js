@@ -16,7 +16,7 @@ export default createGlobalStyle`
   }
 
   body, input, button, textarea {
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
     font-size: 16px;
     outline: none;
   }
