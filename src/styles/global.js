@@ -9,14 +9,14 @@ export default createGlobalStyle`
   }
 
   body {
-    background-color: ${ ({ theme }) => theme.colors.background };
-    color: ${ ({ theme }) => theme.colors.text };
+    background-color: ${ ({ theme }) => theme.COLORS.WHITE };
+    color: ${ ({ theme }) => theme.COLORS.TEXT };
 
     -webkit-font-smoothing: antialiased;
   }
 
   body, input, button, textarea {
-    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     outline: none;
   }
