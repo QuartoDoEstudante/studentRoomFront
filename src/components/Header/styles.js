@@ -8,6 +8,7 @@ export const Container = styled.div`
   padding: 0 120px;
   align-items: center;
   gap: 9px;
+  border-bottom: 1px solid #ccc;
 
   background-color: ${({theme}) => theme.COLORS.WHITE};
 
@@ -17,6 +18,9 @@ export const Container = styled.div`
     font-weight: 700;
     cursor: pointer;
   } 
+  > button {
+    width: 270px;
+  }
 `;
 
 export const Profile = styled.div`

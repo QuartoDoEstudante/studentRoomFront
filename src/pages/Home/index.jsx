@@ -11,10 +11,7 @@ export function Home(){
       <Filters>
         <ButtonFilter title="Todos" />
         <ButtonFilter title="Dividir apto" />
-        <ButtonFilter title="Perto de mim" />
-        <ButtonFilter title="Kitnet" />
-        <ButtonFilter title="2 quartos" />
-        <ButtonFilter title="+ de dois quartos" />
+        <ButtonFilter title="Meus Anuncios" />
         <ButtonFilter title="Mais procurados" />
         <ButtonFilter title="Menor valor" />
         <ButtonFilter title="Maior valor" />

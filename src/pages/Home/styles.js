@@ -9,24 +9,24 @@ export const Container = styled.div`
 
 export const Filters = styled.div`
   width: 100%;
-  min-height: 45px;
+  
   padding: 0 2%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 30px;
   flex-wrap: wrap;
   align-content: flex-start;
+  margin-top: -32px;
   
 `;
 
 export const Content = styled.div`
   margin-top: 45px;
   width: 100%;
-  padding: 0 2%;
+  padding: 0 20px;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
+  
   gap: 32px;
 
 `;

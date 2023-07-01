@@ -1,5 +1,5 @@
 import { Container, Profile, Search } from "./styles";
-import { Input } from "../Input"
+import { InputHome } from "../InputHome"
 import { Button } from "../Button"
 
 
@@ -8,7 +8,7 @@ export function Header(){
     <Container>
       <h1>SudentRoom</h1>
       <Search>
-        <Input placeholder="Pesquise por o Valor que está buscando.."/>
+        <InputHome placeholder="Pesquise por o Valor que está buscando.."/>
       </Search>
         
       {/* <Profile>

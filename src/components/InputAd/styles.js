@@ -5,27 +5,29 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
 
-  background-color: ${({theme}) => theme.COLORS.GRAY};
+  background-color: ${({theme}) => theme.COLORS.WHITE};
   color: ${({theme}) => theme.COLORS.WHITE};
 
   margin-bottom: 8px;
   border-radius: 10px;
 
+  > label {
+    margin-top: -90px;
+    font-weight: 600;
+    position: absolute;
+  }
+
   > input {
     height: 56px;
     width: 100%;
     padding: 12px;
-    color: ${({theme}) => theme.COLORS.WHITE};
+    color: black;
     background: transparent;
-    border: 0;
-
+    border: 1px solid #ccc;
+    border-radius: 10px;
     &:placeholder {
       color: ${({theme}) => theme.COLORS.WHITE};
     }
 
   } 
-
-  > svg {
-      margin-left: 16px;
-  }
 `;
