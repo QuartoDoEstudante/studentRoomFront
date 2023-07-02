@@ -7,6 +7,7 @@ export default {
     GRAY: "#E6E6E6",
     BLACK: "#000000",
     GRAY_TEXT: "#5E5C68",
+    RED_BUTTON: '#F67280'
   }
 
    

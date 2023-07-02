@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 380px;
-  max-height: 330px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: start;
   gap: 10px;
   padding: 10px;
+  margin-bottom: 50px;
 
   > div {
     width: 100%;

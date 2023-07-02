@@ -58,6 +58,11 @@ export function Home(){
           price="500,00"
           description="Bem localizada, perto da faculdade na esquina do espetinho do jacaré"
         />
+        <Card
+          title="Kitnet 20x40"
+          price="500,00"
+          description="Bem localizada, perto da faculdade na esquina do espetinho do jacaré"
+        />
       </Content>
 
     </Container>

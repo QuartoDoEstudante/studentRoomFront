@@ -26,8 +26,15 @@ export const Content = styled.div`
   padding: 0 20px;
   display: flex;
   flex-wrap: wrap;
-  
   gap: 32px;
+
+  > div {
+    width: 450px;
+    height: 350px;
+    border-radius: 10px;
+    
+  }
+
 
 `;
 
