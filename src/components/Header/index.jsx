@@ -10,7 +10,9 @@ export function Header(){
       <Search>
         <InputHome placeholder="Pesquise por o Valor que está buscando.."/>
       </Search>
-        
+
+      <Button title="Anunciar" />
+
       {/* <Profile>
         <div>
           <h2>Lourival Junior</h2>
@@ -21,8 +23,6 @@ export function Header(){
         
         
       </Profile> */}
-
-      <Button title="Anunciar" />
 
     </Container>
   )

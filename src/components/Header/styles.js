@@ -38,11 +38,10 @@ export const Profile = styled.div`
     h2 {
     font-size: 18px;
     font-weight: bold;
-    color: ${({theme}) => theme.COLORS.WHITE};
+    color: black;
     }
 
     a {
-    color: ${({theme}) => theme.COLORS.GRAY};
     font-size: 14px;
     font-weight: 400;
     }

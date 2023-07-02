@@ -9,6 +9,7 @@ import { SignUp } from './pages/SignUp'
 import { CreateAdFirst } from './pages/CreateAdFirst'
 import { CreateAdSecond } from './pages/CreateAdSecond'
 import { CreateAdSummary } from './pages/CreateAdSummary'
+import { Profile } from './pages/Profile'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
