@@ -1,8 +1,7 @@
 import { Container, DropContainer, UploadMessage } from "./styles";
 import Dropzone from "react-dropzone";
 
-export function Upload({ onUpload}) {
-
+export function Upload({ onUpload }) {
   function renderDragMessage(isDragActive, isDragReject) {
     if (!isDragActive) {
       return <UploadMessage>Arraste arquivos aqui...</UploadMessage>;
@@ -13,11 +12,19 @@ export function Upload({ onUpload}) {
     }
 
     return <UploadMessage type="success">Solte os arquivos aqui</UploadMessage>;
-  };
+  }
+
+  function handleDropAccepted(acceptedFiles) {
+    const imageFiles = acceptedFiles.filter(file => file.type.startsWith("image/"));
+    onUpload(imageFiles);
+    if (!imageFiles.length) {
+      alert("Arquivo não suportado");
+    }
+  }
 
   return (
     <Container>
-      <Dropzone accept="image/*" onDropAccepted={onUpload}>
+      <Dropzone onDropAccepted={handleDropAccepted}>
         {({ getRootProps, getInputProps, isDragActive, isDragReject }) => (
           <DropContainer
             {...getRootProps()}
@@ -30,6 +37,5 @@ export function Upload({ onUpload}) {
         )}
       </Dropzone>
     </Container>
-    
   );
 }
