@@ -10,12 +10,15 @@ import { CreateAdFirst } from './pages/CreateAdFirst'
 import { CreateAdSecond } from './pages/CreateAdSecond'
 import { CreateAdSummary } from './pages/CreateAdSummary'
 import { Profile } from './pages/Profile'
+import { Upload } from './components/Upload'
+import { FileList } from './components/FileList'
+import { UploadImages } from './pages/UploadImages'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <Home/>
+      <UploadImages />
     </ThemeProvider>
   </React.StrictMode>,
 )
