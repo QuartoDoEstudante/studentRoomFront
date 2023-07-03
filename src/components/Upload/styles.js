@@ -21,7 +21,7 @@ export const DropContainer = styled.div.attrs({
   className: "dropzone"
   })`
   width: 450px;
-  height: 150px;
+  height: 100px;
   border: 1px dashed #ddd;
   border-radius: 4px;
   cursor: pointer;
