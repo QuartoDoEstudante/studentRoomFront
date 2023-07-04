@@ -3,22 +3,16 @@ import ReactDOM from 'react-dom/client'
 import { ThemeProvider } from 'styled-components'
 import  theme  from './styles/theme'
 import GlobalStyle from './styles/global'
-import { Home } from './pages/Home'
-import { SignIn } from './pages/SignIn'
-import { SignUp } from './pages/SignUp'
-import { CreateAdFirst } from './pages/CreateAdFirst'
-import { CreateAdSecond } from './pages/CreateAdSecond'
-import { CreateAdSummary } from './pages/CreateAdSummary'
-import { Profile } from './pages/Profile'
-import { Upload } from './components/Upload'
-import { FileList } from './components/FileList'
-import { UploadImages } from './pages/UploadImages'
+import { AuthProvider } from './hooks/auth'
+import { Routes } from './routes'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <UploadImages />
+      <AuthProvider>
+        <Routes />
+      </AuthProvider>
     </ThemeProvider>
   </React.StrictMode>,
 )

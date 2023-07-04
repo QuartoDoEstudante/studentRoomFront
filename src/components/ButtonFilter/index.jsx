@@ -1,9 +1,11 @@
 import { Container } from './styles';
 
-export function ButtonFilter({title}){
+export function ButtonFilter({title, ...rest}){
+  
   return (
-    <Container>
-      <button>{title}</button>
+    <Container >
+      
+      <button {...rest}>{title}</button>
     </Container>
   )
 }
