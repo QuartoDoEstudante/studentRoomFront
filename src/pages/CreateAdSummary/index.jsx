@@ -2,8 +2,17 @@ import { Container, Content, SummaryFirst, SummarySecond, ContainerSlider } from
 import { Slide } from "../../components/Slide";
 import { Button } from "../../components/Button";
 import location from "../../assets/location.svg";
+import { useAuth} from "../../hooks/auth";
 
 export function CreateAdSummary() {
+
+  const { user } = useAuth();
+  
+  if(!user){
+    return(
+      <h1>Sem autorização /:</h1>
+    )
+  }
   return (
     <Container>
       <div>

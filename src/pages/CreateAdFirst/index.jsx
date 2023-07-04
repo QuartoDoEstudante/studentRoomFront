@@ -1,12 +1,19 @@
 import { Container, Form, Background, DoubleInput } from "./styles";
 import { InputAd } from "../../components/InputAd";
 import { Button } from "../../components/Button";
-import {  FiMail, FiLock} from 'react-icons/fi';
+import { useAuth} from "../../hooks/auth";
+
 
 
 export function CreateAdFirst(){
 
-
+  const { user } = useAuth();
+  
+  if(!user){
+    return(
+      <h1>Sem autorização /:</h1>
+    )
+  }
   return(
     <Container>
       <Form>

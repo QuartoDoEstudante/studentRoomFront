@@ -4,9 +4,19 @@ import { FileList } from "../../components/FileList";
 import { useState } from "react";
 import { uniqueId } from "lodash";
 import {filesize} from "filesize";
+import { useAuth} from "../../hooks/auth";
+
 
 
 export function UploadImages() {
+
+  const { user } = useAuth();
+  
+  if(!user){
+    return(
+      <h1>Sem autorização /:</h1>
+    )
+  }
 
   const handleDelete = fileId => {
     setUploadedFiles(prevFiles => prevFiles.filter(file => file.id !== fileId));

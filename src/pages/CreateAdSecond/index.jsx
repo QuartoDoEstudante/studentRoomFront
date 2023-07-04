@@ -2,10 +2,18 @@ import { Container, Form, Background, DoubleInput } from "./styles";
 import { InputAd } from "../../components/InputAd";
 import { Button } from "../../components/Button";
 import { TextArea } from "../../components/TextArea";
+import { useAuth} from "../../hooks/auth";
 
 
 export function CreateAdSecond(){
 
+  const { user } = useAuth();
+  
+  if(!user){
+    return(
+      <h1>Sem autorização /:</h1>
+    )
+  }
 
   return(
     <Container>
