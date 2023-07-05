@@ -65,7 +65,7 @@ export function Profile() {
 
       <Form>
         <Avatar>
-          <img src={avatar} alt="foto do usuário" />
+          <img src={avatar} alt="" />
           <label htmlFor="avatar">
             <FiCamera />
             <input id="avatar" type="file" onChange={handleChangeAvatar} />
