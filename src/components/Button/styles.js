@@ -8,7 +8,7 @@ export const Container = styled.button`
   justify-content: center;
   padding: 22px;
   background-color: ${({theme}) => theme.COLORS.PRIMARY};
-  color: ${({theme}) => theme.COLORS.SECONDARY};
+  color: white;
   border-radius: 10px;
   border: none;
 

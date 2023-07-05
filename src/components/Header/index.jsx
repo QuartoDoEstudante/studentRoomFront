@@ -22,7 +22,7 @@ export function Header({onUpdateSearch}){
   };
 
   function handleCreateProperty(){
-    user ? navigate("/create-ad-first") : navigate("/login");
+    user ? navigate("/createAd") : navigate("/login");
   }
 
   const [avatarUrl, setAvatarUrl] = useState(() => {
