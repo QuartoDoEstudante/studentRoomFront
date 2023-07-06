@@ -24,7 +24,7 @@ export function Slide({id}){
   
       setPropertyImages(urls);
     } catch (error) {
-      console.error(error);
+      return
     }
   }
 

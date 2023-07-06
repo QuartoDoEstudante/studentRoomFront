@@ -53,7 +53,7 @@ export const Container = styled.div`
 
   .slick-slide img {
     width: 100%; 
-    height: 380px; 
+    height: 420px; 
     object-fit: cover;
     border-radius: 8px;
 

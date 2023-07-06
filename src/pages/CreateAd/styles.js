@@ -8,6 +8,14 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   gap: 10px;
+
+  @media(max-width: 1250px){
+    flex-direction: column;
+    height: auto;
+    padding: 0 20px;
+    gap: 20px;
+    padding-top: 150px;
+  }
 `;
 
 export const Uploads = styled.div`
@@ -26,6 +34,10 @@ export const Uploads = styled.div`
     color: ${({theme}) => theme.COLORS.PRIMARY};
     margin-bottom: 10px;
     font-weight: 600;
+  }
+  @media(max-width: 1250px){
+    margin-bottom: 30px;
+    margin-top: -70px;
   }
     
 `

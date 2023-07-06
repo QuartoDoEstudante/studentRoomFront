@@ -26,6 +26,13 @@ export const Content = styled.div`
   padding: 0 2%;
   height: auto;
   max-width: 1400px;
+
+  @media(max-width: 1250px){
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+
+  }
 `;
 
 export const SummaryFirst = styled.div`
@@ -48,10 +55,16 @@ export const SummaryFirst = styled.div`
       margin-left: 10px;
     }
   }
+
+  @media(max-width: 1250px){
+    align-items: center;
+    justify-content: center;
+
+  }
 `;
 
 export const ContainerSlider = styled.div`
-  width: 750px;
+  width: 650px;
   height: 500px;
   border-radius: 10px;
   overflow: hidden;
@@ -59,15 +72,6 @@ export const ContainerSlider = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
- 
-  > img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    background-size: cover;
-  }
-
-  
 `;
 
 export const SummarySecond = styled.div`
@@ -77,6 +81,7 @@ export const SummarySecond = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
   gap: 20px;
+  margin-bottom: 40px;
 
   > button:first-of-type {
     background: ${({theme}) => theme.COLORS.RED_BUTTON};
@@ -84,6 +89,12 @@ export const SummarySecond = styled.div`
 
   p:first-of-type {
     font-weight: 600;
+  }
+
+  @media(max-width: 1250px){
+    align-items: center;
+    justify-content: center;
+
   }
   
 `;

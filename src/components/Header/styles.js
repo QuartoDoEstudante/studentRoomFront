@@ -21,6 +21,13 @@ export const Container = styled.div`
   > button {
     width: 270px;
   }
+
+  @media(max-width: 1250px){
+    flex-direction: column;
+    height: auto;
+    padding: 0 20px;
+    gap: 20px;
+  }
 `;
 
 export const Profile = styled.div`

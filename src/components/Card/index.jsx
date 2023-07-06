@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 
 export function Card({title, price, description, id}) {
 
-  const router = `/property/${id}`
+  const router = `/details/${id}`
 
   const navigate = useNavigate();
 
