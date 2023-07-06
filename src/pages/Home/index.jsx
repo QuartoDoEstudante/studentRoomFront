@@ -55,6 +55,7 @@ export function Home(){
             title={item.title}
             price={item.value}
             description={item.description}
+            id={item.id}
             onClick={() => navigate(`/property/${item.id}`)}
           />
         ))}

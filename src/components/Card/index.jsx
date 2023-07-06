@@ -13,7 +13,7 @@ export function Card({title, price, description, id}) {
 
   return(
     <Container>
-      <Slide />
+      <Slide id={id} />
       <h1>{title}</h1>
       <div>
         <p>R$:{price}</p>

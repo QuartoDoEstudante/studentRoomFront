@@ -5,11 +5,36 @@ import "slick-carousel/slick/slick-theme.css";
 import arrowLeftCarrosel from "../../assets/arrowLeftCarrosel.svg";
 import arrowRightCarrosel from "../../assets/arrowRightCarrosel.svg";
 import property  from "../../assets/property.png";
-import property2  from "../../assets/property2.jpg";
-import property3  from "../../assets/property3.jpg";
+import { api } from "../../services/api";
+import { useState, useEffect } from "react";
 
+export function Slide({id}){
 
-export function Slide(){
+ 
+  const [propertyImages, setPropertyImages] = useState([]);
+
+  async function fetchPropertyImages() {
+    try {
+      const response = await api.get(`/property/show/${id}`);
+      const photos = response.data.photos;
+  
+      const urls = photos.map((photo) => {
+        return `${api.defaults.baseURL}/files/${photo.photo}`;
+      });
+  
+      setPropertyImages(urls);
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
+  useEffect(() => {
+    fetchPropertyImages();
+  }, []);
+  
+  
+  
+ 
   
   const settings = {
     dots: true,
@@ -25,19 +50,15 @@ export function Slide(){
   };
 
 
-
-  const ImagesProperty = [{property}]
-
-
   return (
     <Container>
-      <hr/>
+      <hr />
       <Slider {...settings}>
-        <img src={property} alt="imagem da propriedade" />
-        <img src={property} alt="imagem da propriedade" />    
-        <img src={property} alt="imagem da propriedade" />    
-
+        {propertyImages.map((url, index) => (
+          <img key={index} src={url} alt={`Property Image ${index}`} />
+        ))}
       </Slider>
     </Container>
   );
+  
 }

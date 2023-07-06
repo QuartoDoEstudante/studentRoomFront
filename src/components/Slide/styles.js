@@ -50,5 +50,13 @@ export const Container = styled.div`
   .slick-next:before {
     display: none;
   }  
+
+  .slick-slide img {
+    width: 100%; 
+    height: 380px; 
+    object-fit: cover;
+    border-radius: 8px;
+
+  }
   
 `
