@@ -8,7 +8,7 @@ export const Container = styled.div`
   justify-content: start;
   gap: 10px;
   padding: 10px;
-  margin-bottom: 85px;
+  margin-bottom: 120px;
   
 
   > div {
