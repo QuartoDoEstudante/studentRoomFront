@@ -8,14 +8,15 @@ export const Container = styled.div`
   justify-content: start;
   gap: 10px;
   padding: 10px;
-  margin-bottom: 50px;
+  margin-bottom: 85px;
+  
 
   > div {
     width: 100%;
     display: flex;
     justify-content: space-between;
     > img {
-      margin-left: 215px;
+      margin-left: 315px;
       margin-top: -3px;
     }
   }
@@ -36,6 +37,8 @@ export const Container = styled.div`
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
+    max-width: 200px;
+
   }
 
 `;

@@ -28,6 +28,7 @@ export function Slide(){
 
   const ImagesProperty = [{property}]
 
+
   return (
     <Container>
       <hr/>

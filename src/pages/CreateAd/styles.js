@@ -93,6 +93,7 @@ export const DoubleInput = styled.div`
   gap: 24px;
   width: 100%;
   justify-content: space-between;
+  margin-top: -10px;
 `;
 
 export const SaveAd = styled.div` 

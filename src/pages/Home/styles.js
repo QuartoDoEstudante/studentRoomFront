@@ -4,7 +4,6 @@ export const Container = styled.div`
   width: 100%;
   height: 100vh;
   background-color: ${({theme}) => theme.COLORS.WHITE};
-  
 `;
 
 export const Filters = styled.div`
@@ -21,12 +20,15 @@ export const Filters = styled.div`
 `;
 
 export const Content = styled.div`
-  margin-top: 45px;
   width: 100%;
-  padding: 0 20px;
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
+  max-width: 1500px;
+  margin: 55px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   > div {
     width: 450px;
