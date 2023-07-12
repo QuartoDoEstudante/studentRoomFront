@@ -25,12 +25,9 @@ export function Header({onUpdateSearch}){
     user ? navigate("/createAd") : navigate("/login");
   }
 
-  const [avatarUrl, setAvatarUrl] = useState(() => {
-    if(user){
-      return user.avatar ? `${api.defaults.baseURL}/files/${user.avatar}` : avatarPlaceHolder;
-    }
-    }
-  );
+
+
+  const avatarUrl = user && user.avatar ? `${api.defaults.baseURL}/files/${user.avatar}` : avatarPlaceHolder;
  
 
   return(

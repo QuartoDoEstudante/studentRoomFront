@@ -14,7 +14,7 @@ export function Home(){
   const [search, setSearch] = useState("0");
   const [property, setProperty] = useState("");
 
-  const [type, setType] = useState(0);
+  const [type, setType] = useState('');
 
   const updateSearch = (value) => {
     setSearch(value);
@@ -25,11 +25,13 @@ export function Home(){
 
   useEffect(() => {
     async function fetchProperty(){
-      const response = await api.get(`/property/index?type=${type}&value=${search}`);
+      const response = await api.get(`/property/index?&value=${search}&type=${type}`);
       setProperty(response.data)
     }
     fetchProperty()
   }, [search, type])
+
+
 
   const navigate = useNavigate();
 
@@ -39,7 +41,7 @@ export function Home(){
     <Container>
       <Header  onUpdateSearch={updateSearch} />
       <Filters>
-        <ButtonFilter title="Todos" onClick={() => setType(0) }/>
+        <ButtonFilter title="Todos" onClick={() => setType('') }/>
         <ButtonFilter title="Dividir apto" onClick={() => setType(1)} />
         <ButtonFilter title="Meus Anuncios" />
         <ButtonFilter title="Mais procurados" />
