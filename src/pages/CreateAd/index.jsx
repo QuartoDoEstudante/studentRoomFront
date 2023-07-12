@@ -1,4 +1,4 @@
-import { Container, Uploads, Form, DoubleInput, SaveAd } from "./styles";
+import { Container, Uploads, Form, DoubleInput, SaveAd, Header } from "./styles";
 import { Upload } from "../../components/Upload";
 import { FileList } from "../../components/FileList";
 import { useState, useEffect } from "react";
@@ -12,13 +12,9 @@ import { api } from "../../services/api";
 import {  useNavigate } from "react-router-dom";
 import { FiArrowLeft } from "react-icons/fi";
 
-
-
-
 export function CreateAd() {
 
   const navigate = useNavigate();
-
   const { user } = useAuth();
   
   if(!user){
@@ -51,15 +47,7 @@ export function CreateAd() {
     ]);
   };
 
-  
-
-
-
-  
-
-
   async function handleNewProperty(){
-
 
     if(uploadedFiles.length === 0){
       alert('Você precisa adicionar imagens do seu imóvel');
@@ -121,17 +109,17 @@ function handleBack() {
   navigate('/')
 }
 
-  
-  
-
   return (
     <Container>
        <Form>
         
-        <h1>Quarto do Estudante</h1>
-        <button type="button" onClick={handleBack} >
-          <FiArrowLeft />
-        </button>
+        
+        <Header>
+          <button type="button" onClick={handleBack} >
+            <FiArrowLeft />
+          </button>
+          <h1>Quarto do Estudante</h1>
+        </Header>
 
         <DoubleInput>
           <InputAd 

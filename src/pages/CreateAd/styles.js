@@ -44,6 +44,28 @@ export const Uploads = styled.div`
     
 `
 
+export const Header = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  padding: 30px 0 0 10px;
+  button {
+    border: none;
+    color: none;
+    background: none;
+  }
+  svg {
+      color:  ${({theme}) => theme.COLORS.PRIMARY};
+      font-size: 24px;
+    }
+  > h1 {
+    font-size: 38px;
+    color: ${({theme}) => theme.COLORS.PRIMARY};
+  }
+`
+
 export const Form = styled.form`
   width: 100%;
   max-width: 800px;
@@ -54,30 +76,7 @@ export const Form = styled.form`
   align-items: center;
   gap: 48px;
   text-align: center;
-  button {
-    border: none;
-    color: none;
-    background: none;
-    position: absolute;
-    top: 45px;
-    left:55px;
-  }
-  svg {
-      color:  ${({theme}) => theme.COLORS.PRIMARY};
-      font-size: 24px;
-    }
-  > h1 {
-    font-size: 38px;
-    color: ${({theme}) => theme.COLORS.PRIMARY};
-    position: absolute;
-    top: 0;
-    left: 55px;
-    margin: 32px 0 0 32px;
-  }
-  > h2 {
-    font-size: 24px;
-    margin: 48px 0;
-  }
+  
   > p {
     font-size: 14px;
     color: ${({theme}) => theme.COLORS.TEXT};
