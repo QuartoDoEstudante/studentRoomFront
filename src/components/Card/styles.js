@@ -8,7 +8,7 @@ export const Container = styled.div`
   justify-content: start;
   gap: 10px;
   padding: 10px;
-  margin-bottom: 120px;
+  margin-bottom: 290px;
   
 
   > div {
@@ -25,6 +25,10 @@ export const Container = styled.div`
     font-size: 20px;
     font-weight: 700;
     color: ${({theme}) => theme.COLORS.BLACK};
+    width: 100%;
+    overflow: hidden;
+    min-height: 30px;
+    max-height: 30px;
   }
 
   > div > span {
@@ -37,7 +41,10 @@ export const Container = styled.div`
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
-
+    min-height: 60px;
+    max-height: 60px;
+    width: 100%;
+    overflow: hidden;
   }
 
 `;

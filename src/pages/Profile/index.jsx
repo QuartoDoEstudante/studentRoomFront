@@ -1,4 +1,4 @@
-import { FiArrowLeft, FiUser, FiMail, FiLock, FiCamera } from "react-icons/fi";
+import { FiArrowLeft, FiUser, FiMail, FiLock, FiCamera, FiPhoneCall } from "react-icons/fi";
 import { Container, Form, Avatar } from "./styles";
 import { Input } from "../../components/Input";
 import { Button } from "../../components/Button";
@@ -108,7 +108,7 @@ export function Profile() {
         <Input
           placeholder="Contato"
           type="text"
-          icon={FiUser}
+          icon={FiPhoneCall}
           value={contact}
           onChange={(e) => setContact(e.target.value)}
         />

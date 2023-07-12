@@ -19,10 +19,12 @@ export const Container = styled.div`
 `;
 
 export const Uploads = styled.div`
+
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 600px;
+  max-width: 800px;
+  
   padding: 25px;
   background-color: #fff;
   border-radius: 4px;
@@ -43,7 +45,8 @@ export const Uploads = styled.div`
 `
 
 export const Form = styled.form`
-  min-width: 800px;
+  width: 100%;
+  max-width: 800px;
   padding: 0 80px;
   display: flex;
   flex-direction: column;
@@ -51,13 +54,24 @@ export const Form = styled.form`
   align-items: center;
   gap: 48px;
   text-align: center;
-
+  button {
+    border: none;
+    color: none;
+    background: none;
+    position: absolute;
+    top: 45px;
+    left:55px;
+  }
+  svg {
+      color:  ${({theme}) => theme.COLORS.PRIMARY};
+      font-size: 24px;
+    }
   > h1 {
     font-size: 38px;
     color: ${({theme}) => theme.COLORS.PRIMARY};
     position: absolute;
     top: 0;
-    left: 0;
+    left: 55px;
     margin: 32px 0 0 32px;
   }
   > h2 {
@@ -97,6 +111,16 @@ export const Form = styled.form`
     &::placeholder {
       color: #ccc;
     }
+
+    
+  }
+
+  @media(max-width: 855px){
+    > label{
+    font-weight: 600;
+    margin-left: 0;
+    margin-bottom: -35px;
+  }
   }
 `;
 
@@ -106,6 +130,10 @@ export const DoubleInput = styled.div`
   width: 100%;
   justify-content: space-between;
   margin-top: -10px;
+
+  @media(max-width: 855px){
+    flex-direction: column;
+  }
 `;
 
 export const SaveAd = styled.div` 
@@ -114,5 +142,6 @@ export const SaveAd = styled.div`
   justify-content: space-between;
   height: 100%;
   padding: 130px 0;
+  max-width: 800px;
 
 `;

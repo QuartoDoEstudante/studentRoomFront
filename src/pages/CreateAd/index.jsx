@@ -10,6 +10,7 @@ import { Button } from "../../components/Button";
 import { RadioInput } from "../../components/RadioInput";
 import { api } from "../../services/api";
 import {  useNavigate } from "react-router-dom";
+import { FiArrowLeft } from "react-icons/fi";
 
 
 
@@ -116,6 +117,9 @@ const handleOptionChange = (type) => {
 
 };
 
+function handleBack() {
+  navigate('/')
+}
 
   
   
@@ -123,7 +127,11 @@ const handleOptionChange = (type) => {
   return (
     <Container>
        <Form>
+        
         <h1>Quarto do Estudante</h1>
+        <button type="button" onClick={handleBack} >
+          <FiArrowLeft />
+        </button>
 
         <DoubleInput>
           <InputAd 

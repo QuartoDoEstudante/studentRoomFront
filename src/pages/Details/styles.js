@@ -89,6 +89,7 @@ export const SummarySecond = styled.div`
 
   p:first-of-type {
     font-weight: 600;
+    font-size: 26px;
   }
 
   @media(max-width: 1250px){

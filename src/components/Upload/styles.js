@@ -20,7 +20,7 @@ export const Container = styled.div`
 export const DropContainer = styled.div.attrs({
   className: "dropzone"
   })`
-  width: 450px;
+  min-width: 350px;
   height: 100px;
   border: 1px dashed #ddd;
   border-radius: 4px;

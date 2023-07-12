@@ -5,6 +5,8 @@ import { Card } from '../../components/Card'
 import { useState, useEffect } from "react";
 import { api } from "../../services/api";
 import {  useNavigate } from "react-router-dom";
+import { Footer } from '../../components/Footer';
+
 
 
 export function Home(){
@@ -13,6 +15,7 @@ export function Home(){
 
   const [search, setSearch] = useState("0");
   const [property, setProperty] = useState("");
+ 
 
   const [type, setType] = useState('');
 
@@ -30,6 +33,8 @@ export function Home(){
     }
     fetchProperty()
   }, [search, type])
+
+
 
 
 
@@ -62,6 +67,7 @@ export function Home(){
         ))}
 
       </Content>
+      <Footer/>
 
     </Container>
     
