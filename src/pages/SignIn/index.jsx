@@ -24,9 +24,7 @@ export function SignIn(){
     }
 
     signIn({email, password});
-    if(user){
-      navigate("/");
-    }
+    navigate("/");
     
   }
 
