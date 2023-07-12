@@ -27,8 +27,8 @@ export const Container = styled.div`
     color: ${({theme}) => theme.COLORS.BLACK};
     width: 100%;
     overflow: hidden;
-    min-height: 30px;
-    max-height: 30px;
+    min-height: 45px;
+    max-height: 45px;
   }
 
   > div > span {
