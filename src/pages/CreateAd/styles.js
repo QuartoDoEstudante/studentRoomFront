@@ -50,7 +50,7 @@ export const Header = styled.div`
   justify-content: flex-start;
   align-items: center;
   gap: 10px;
-  padding: 30px 0 0 10px;
+  padding: 10px 0 0 10px;
   button {
     border: none;
     color: none;
@@ -74,7 +74,7 @@ export const Form = styled.form`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 48px;
+  gap: 42px;
   text-align: center;
   height: 100%;
   
