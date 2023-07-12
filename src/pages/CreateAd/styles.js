@@ -76,6 +76,7 @@ export const Form = styled.form`
   align-items: center;
   gap: 48px;
   text-align: center;
+  height: 100%;
   
   > p {
     font-size: 14px;
