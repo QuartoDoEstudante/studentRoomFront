@@ -83,7 +83,7 @@ export function Details() {
           <p>{property.contact}</p>
 
           <h2>Compartilhar</h2>
-<p>{currentUrl} <img src={copy} width="28px" alt="copiar" onClick={copyToClipboard} style={{ cursor: 'pointer' }}/></p> 
+          <p>{currentUrl} <img src={copy} width="28px" alt="copiar" onClick={copyToClipboard} style={{ cursor: 'pointer' }}/></p> 
         </SummarySecond>
       </Content>
     </Container>
