@@ -32,7 +32,7 @@ export function Header({onUpdateSearch}){
 
   return(
     <Container>
-      <h1>SudentRoom</h1>
+      <h1>Apartamento do Estudante</h1>
       <Search>
         <InputHome placeholder="Pesquise por o Valor que está buscando.." 
           onChange={handleSearchChange} 

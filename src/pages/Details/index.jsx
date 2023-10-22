@@ -52,7 +52,7 @@ export function Details() {
   return (
     <Container>
       <div>
-        <h1>Quarto do Estudante</h1>
+        <h1>Apartamento do Estudante</h1>
       </div>
 
       <Content>

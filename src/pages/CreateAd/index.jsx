@@ -118,7 +118,7 @@ function handleBack() {
           <button type="button" onClick={handleBack} >
             <FiArrowLeft />
           </button>
-          <h1>Quarto do Estudante</h1>
+          <h1>Apartamento do Estudante</h1>
         </Header>
 
         <DoubleInput>
